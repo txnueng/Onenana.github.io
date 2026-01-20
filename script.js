@@ -32,7 +32,7 @@ function toggleMenu() {
 
 // สร้างข้อมูลสมาชิก 10 คน อัตโนมัติ (Mock Data)
 const membersData = [
-    { name: "นายศิริพงศ์ พลไชย", role: "ประธานพรรค", contact: "IG: t1.nuengx", imagefile: "images/Untitled2_20260119221246.jpg"},
+    { name: "นายศิริพงศ์ พลไชย", role: "ประธานพรรค", contact: "IG: t1.nuengx", imagefile: "Untitled2_20260119221246.jpg"},
     { name: "น.ส.สมหญิง จริงใจ", role: "รองประธาน", contact: "IG: @ying_jing" },
     { name: "นายกล้าหาญ ชาญชัย", role: "เหรัญญิก", contact: "Line: klahan007" },
     { name: "น.ส.มานี มีตา", role: "เลขานุการ", contact: "IG: @manee.m" },
@@ -51,11 +51,10 @@ function renderMembers() {
 
     membersData.forEach((member, index) => {
         // ใช้รูป Placeholder ตามเพศ (แบบสุ่มคร่าวๆ)
-        const imgUrl = `https://api.dicebear.com/7.x/avataaars/svg?seed=${index}&backgroundColor=b6e3f4`;
 
         const card = `
             <div class="member-card">
-                <img src="${imgUrl}" alt="${member.name}" class="member-img">
+                <img src="${member.imageFile}" alt="${member.name}" class="member-img">
                 <div class="member-info">
                     <div class="member-name">${member.name}</div>
                     <div style="color: #888; margin-bottom: 5px;">${member.role}</div>
