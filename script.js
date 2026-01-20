@@ -32,7 +32,7 @@ function toggleMenu() {
 
 // สร้างข้อมูลสมาชิก 10 คน อัตโนมัติ (Mock Data)
 const membersData = [
-    { name: "นายสมชาย ใจดี", role: "ประธานพรรค", contact: "IG: t1.nuengx", imagefile: "Untitled2_20260119221246.jpg"},
+    { name: "นายศิริพงศ์ พลไชย", role: "ประธานพรรค", contact: "IG: t1.nuengx", imagefile: "images/Untitled2_20260119221246.jpg"},
     { name: "น.ส.สมหญิง จริงใจ", role: "รองประธาน", contact: "IG: @ying_jing" },
     { name: "นายกล้าหาญ ชาญชัย", role: "เหรัญญิก", contact: "Line: klahan007" },
     { name: "น.ส.มานี มีตา", role: "เลขานุการ", contact: "IG: @manee.m" },
